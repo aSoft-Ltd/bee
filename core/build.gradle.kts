@@ -1,4 +1,5 @@
 plugins {
+    kotlin("plugin.serialization")
     kotlin("multiplatform")
     id("tz.co.asoft.library")
     signing
