@@ -6,10 +6,10 @@ import kotlin.js.JsExport
 import kotlinx.serialization.Serializable
 
 @Serializable
-enum class DocumentStatus {
-    Draft,
-    WaitingForReview,
-    InReview,
-    Readjust,
-    Approved,
+enum class DocumentStatus(val label: String) {
+    Draft("Draft"),
+    WaitingForReview("Waiting for review"),
+    InReview("In review"),
+    Readjust("Re-adjust"),
+    Approved("Approved"),
 }
