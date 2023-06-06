@@ -6,9 +6,9 @@ import kotlin.js.JsExport
 import kotlinx.serialization.Serializable
 
 @Serializable
-enum class TaskStatus {
-    Pending,
-    InProgress,
-    Completed,
-    Cancelled
+enum class TaskStatus(val label: String) {
+    Pending("Pending"),
+    InProgress("In Progress"),
+    Completed("Completed"),
+    Cancelled("Cancelled")
 }
