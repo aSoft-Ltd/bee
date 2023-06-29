@@ -1,4 +1,5 @@
 import expect.expect
+import kommander.expect
 import live.mutableLiveOf
 import kotlin.test.Test
 import kotlin.test.fail
@@ -17,7 +18,7 @@ class LiveMapTest {
             values[W1] = it
         }
         liveInt.value = 2
-        expect(values[W1]).toBe("String: 2")
+        expect<String?>(values[W1]).toBe("String: 2")
         liveInt.value = 3
         expect(values[W1]).toBe("String: 3")
         val watcher2 = liveString.watch {
