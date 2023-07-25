@@ -6,11 +6,7 @@ plugins {
 }
 
 kotlin {
-<<<<<<< HEAD
     jvm { library(); }
-=======
-    jvm { library() }
->>>>>>> origin/main
     js(IR) { library() }
 //    val nativeTargets = nativeTargets(true)
 //    macosArm64()
