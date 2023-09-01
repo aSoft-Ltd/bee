@@ -19,13 +19,12 @@ kotlin {
         val commonMain by getting {
             dependencies {
                 api(kotlinx.serialization.core)
-            }
+            } 
         }
 
         val commonTest by getting {
             dependencies {
-                implementation(libs.kommander.coroutines)
-                implementation(libs.koncurrent.executors.mock)
+                implementation(libs.kommander.core)
             }
         }
     }
