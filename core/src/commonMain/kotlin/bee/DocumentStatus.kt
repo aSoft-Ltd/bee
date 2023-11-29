@@ -12,5 +12,6 @@ enum class DocumentStatus(val label: String) {
     InReview("In review"),
     Readjust("Re-adjust"),
     Approved("Approved"),
+    Rejected("Rejected"),
     Cancelled("Cancelled")
 }
