@@ -1,7 +1,7 @@
 @file:JsExport
 package bee
 
-import kotlin.js.JsExport
+import kotlinx.JsExport
 import kotlinx.serialization.Serializable
 @Serializable
 class DeliverSummary(
